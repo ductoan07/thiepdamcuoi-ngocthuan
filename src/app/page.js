@@ -6,7 +6,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
   const name = searchParams.name ? ` - ${searchParams.name}` : "";
 
   // Đường dẫn URL của trang web trên Vercel
-  const baseUrl = metaData.main.url || "https://thiepdamcuoi-ngoc.vercel.app";
+  const baseUrl = metaData.main.url || "https://thiepdamcuoi-ngocthuan.vercel.app";
   const currentUrl = searchParams.name
     ? `${baseUrl}?name=${encodeURIComponent(searchParams.name)}`
     : baseUrl;
